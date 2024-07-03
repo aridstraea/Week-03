@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 03</title>
+
+    <!-- Styles, Bootstrap -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container">
+
+    <!-- Navbar -->
+    <nav class="p-3 navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">  AriArt Supplies</a> <!-- Links to home page, site name. -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle Navigation">
+            <span class="navbar-toggler-icon"></span> <!-- Hamburger icon, responsive -->
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item"> <!-- Links to Home page -->
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item"> <!-- Links to Contact page -->
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="p-3 mb-4 border-bottom">
+        <div class="d-flex flex-wrap justify-content-center">
+            <span class="d-flex align-items-center text-dark text-decoration-none mb-3 mb-lg-0 me-lg-auto">
+                <em>AriArt Supplies - your home for all your art needs.</em>
+            </span>
+            <!-- heading 1, main title. -->
+        </div>  
+    </header>
+
+    <div class="container-fluid">
+        <div class="row"> <!-- row with two columns -->
+            <div class="col"> <!-- column 1 -->
+                <img src="images/paints-color-chart.jpg" alt="Paint" width="500" height="300">
+            </div>
+            <div class="p-3 col bg-light border rounded-3"> <!-- column 2 -->
+                <p>Welcome to AriArt Supplies, your one-stop shop for all your art needs.
+                    We have a wide range of art supplies, from paints to canvases, and everything in between. 
+                    We also offer art classes for all ages and skill levels.
+                    Our friendly and knowledgeable staff are here to help you with all your art needs.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur laborum quibusdam nisi 
+                    soluta perspiciatis asperiores ipsam voluptas voluptate laboriosam nihil distinctio, ab modi repellat dolor, 
+                    facilis hic suscipit? Assumenda, alias!</p>
+            </div>
+        </div>
+        <div class="py-5 row"> <!-- row with 1 column -->
+            <h2>Our Products</h2>
+            <table class="table"> <!-- table -->
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Product</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Stock</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Paint Set</td>
+                    <td>1 @ $50.00</td>
+                    <td>12</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Markers</td>
+                    <td>1 @ $8.50</td>
+                    <td>153</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Pencils</td>
+                    <td>25 @ $3.00</td>
+                    <td>26,543</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
